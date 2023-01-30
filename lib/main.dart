@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screen_code/Screen.dart';
+//import 'Screen_code/Screen.dart';
+import 'Screen_code/SignIn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TokScreen(),
+      home: const SignIn(),
     );
   }
 }
