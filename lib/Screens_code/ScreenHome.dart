@@ -33,7 +33,7 @@ class TokScreen extends StatelessWidget {
                 ),
               ),
               Text(
-                "Tokoto, ",
+                "Tokoto. ",
                 style: TextStyle(
                   color: Color(0xfff9a9a9a),
                   fontWeight: FontWeight.w800,
@@ -53,7 +53,7 @@ class TokScreen extends StatelessWidget {
               height: 50,
             ),
             Container(
-              child: Image.asset("Assets/Images/splash_1.png"),
+              child: Image.asset("Assets/Images/Icons/splash_1.png"),
               width: 280,
               height: 250,
             ),
