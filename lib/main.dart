@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'Screen_code/Screen.dart';
-import 'Screens_code/ScreenHome.dart';
-import 'Screens_code/SignIn.dart';
-import 'Screens_code/Signup.dart';
+import 'Screens_code/Acceuil_Screen.dart';
+import 'Screens_code/Auth_Screens/SignIn.dart';
+import 'Screens_code/Auth_Screens/Signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SignIn(),
+      //home: const ScreenHome(),
+      initialRoute: "/Acceuil",
+      routes: {
+        "/signin": (context) => const SignIn(),
+        "/signup": (context) => const SignUp(),
+        "/Acceuil": (context) => const AccScreen(),
+      },
     );
   }
 }
